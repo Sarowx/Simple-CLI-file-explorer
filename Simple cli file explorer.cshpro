@@ -1,7 +1,14 @@
 //+src=Classes/Command.cs
 //+src=Classes/FileExplorer.cs
-//+src=Classes/DisplayInfo.cs
 //+src=Classes/CLIDisplay.cs
-//+src=Enums/ActionsEnum.cs
 //+src=Classes/CLICommandReader.cs
-//+src=Classes/ActionRecognizer.cs
+//+src=Classes/ActionInitializer.cs
+//+src=Classes/Actions/LSAction.cs
+//+src=Classes/Actions/PWDAction.cs
+//+src=Classes/Actions/IAction.cs
+//+src=Classes/Actions/CDAction.cs
+//+src=Classes/Actions/ClearAction.cs
+//+src=Classes/Actions/ExitAction.cs
+//+src=Classes/Actions/CommonAction.cs
+//+src=Classes/Actions/BeepAction.cs
+//+foldLineStart=30:5:50:4:...:Classes/Actions/LSAction.cs

@@ -18,23 +18,17 @@ namespace CSharp_Shell
     public Command Read()
     {
       string plainCommandText = ReadPlainText();
+      
       var orderQueue = SplitToOrders(plainCommandText);
       
-      ActionEnum? actionCode = null;
-      
-      if(orderQueue.Count > 0)
-      {
-        actionCode = RecognizeAction(orderQueue);
-        orderQueue.Dequeue();
-      }
-      
-      Command command = new Command(actionCode,orderQueue);
+      Command command = new Command(orderQueue);
       
       return command;
     }
 
     private string ReadPlainText()
     {
+      Console.Write("$ ");
       string plainText = Console.ReadLine();
       return plainText;
     }
@@ -97,11 +91,5 @@ namespace CSharp_Shell
       return orders;
     }
 
-    private ActionEnum? RecognizeAction(Queue<string> orderQueue)
-    {
-      ActionEnum? action = ActionRecognizer.Recognize(orderQueue.Peek());
-      
-      return action;
-    }
   }
 }

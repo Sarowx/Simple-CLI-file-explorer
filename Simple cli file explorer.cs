@@ -10,7 +10,9 @@ namespace CSharp_Shell
     {
         public static void Main(string[] args)
         {
-					Console.WriteLine("hi");
+          
+					FileExplorer fe = new FileExplorer();
+					fe.Run();
 					
         }
     }
