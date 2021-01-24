@@ -6,8 +6,8 @@ using System.Collections.Generic;
 namespace CSharp_Shell
 {
 
-    public interface IDisplay 
+    public interface ICommandReader 
     {
-      void Display(IDisplayInfo);
+    	Command Read();
     }
 }

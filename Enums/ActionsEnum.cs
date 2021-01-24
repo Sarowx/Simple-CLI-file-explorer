@@ -6,8 +6,11 @@ using System.Collections.Generic;
 namespace CSharp_Shell
 {
 
-    public interface IDisplay 
+    public enum ActionEnum 
     {
-      void Display(IDisplayInfo);
+    	pwd, 
+    	ls,
+    	cd,
+
     }
 }

@@ -6,8 +6,9 @@ using System.Collections.Generic;
 namespace CSharp_Shell
 {
 
-    public interface IDisplay 
+    public interface IDisplayInfo 
     {
-      void Display(IDisplayInfo);
+    	DirectoryInfo currentDirectoryInfo {get;set;}
+    	
     }
 }
