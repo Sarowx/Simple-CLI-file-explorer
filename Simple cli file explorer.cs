@@ -8,9 +8,10 @@ namespace CSharp_Shell
 
     public class Program 
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
-					FileExplorer fe = new FileExplorer();
+					Console.WriteLine("hi");
+					
         }
     }
     

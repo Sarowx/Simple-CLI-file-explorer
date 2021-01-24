@@ -1,11 +1,7 @@
 //+src=Classes/Command.cs
 //+src=Classes/FileExplorer.cs
-//+src=Interfaces/IDisplay.cs
 //+src=Classes/DisplayInfo.cs
 //+src=Classes/CLIDisplay.cs
-//+src=Interfaces/IDisplayInfo.cs
-//+src=Interfaces/ICommandReader.cs
 //+src=Enums/ActionsEnum.cs
 //+src=Classes/CLICommandReader.cs
 //+src=Classes/ActionRecognizer.cs
-//+foldLineStart=42:5:97:4:...:Classes/CLICommandReader.cs

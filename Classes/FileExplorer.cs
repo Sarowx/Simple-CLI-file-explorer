@@ -6,11 +6,19 @@ using System.Collections.Generic;
 namespace CSharp_Shell
 {
 
-    public class FileExplorer 
+  public class FileExplorer
+  {
+    
+    
+    
+    public FileExplorer()
     {
-        public FileExplorer()
-        {
-        	
-        }
+
     }
+    
+    void Run()
+    {
+      
+    }
+  }
 }

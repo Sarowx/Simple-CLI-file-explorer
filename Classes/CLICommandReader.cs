@@ -7,7 +7,7 @@ using System.Text;
 namespace CSharp_Shell
 {
 
-  public class CLICommandReader : ICommandReader
+  public class CLICommandReader
   {
 
     public CLICommandReader()
@@ -15,12 +15,12 @@ namespace CSharp_Shell
 
     }
 
-    public Command ICommandReader.Read()
+    public Command Read()
     {
       string plainCommandText = ReadPlainText();
       var orderQueue = SplitToOrders(plainCommandText);
       
-      ActionEnum actionCode? = null;
+      ActionEnum? actionCode = null;
       
       if(orderQueue.Count > 0)
       {
@@ -30,7 +30,7 @@ namespace CSharp_Shell
       
       Command command = new Command(actionCode,orderQueue);
       
-      return Command;
+      return command;
     }
 
     private string ReadPlainText()

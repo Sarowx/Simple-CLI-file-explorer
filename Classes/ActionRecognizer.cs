@@ -24,6 +24,14 @@ namespace CSharp_Shell
               {
                 return ActionEnum.cd;
               }
+              case "exit":
+              {
+                return ActionEnum.exit;
+              }
+              case "clear":
+              {
+                return ActionEnum.clear;
+              }
               default:
               {
                 return null;

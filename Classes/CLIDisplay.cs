@@ -6,8 +6,11 @@ using System.Collections.Generic;
 namespace CSharp_Shell
 {
 
-    public class CLIDisplay : IDisplay 
+    public class CLIDisplay
     {
-    	
+    	public void Display()
+    	{
+    	  
+    	}
     }
 }

@@ -10,11 +10,7 @@ namespace CSharp_Shell
   {
 		public ActionEnum? ActionCode { get; private set; }
 		public Queue<string> ActionParams { get; private set; }
-
-		public Command()
-		{
-			
-		}
+		
 		
 		public Command(ActionEnum? actionCode)
 		{

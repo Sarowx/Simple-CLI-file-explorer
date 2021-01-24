@@ -11,6 +11,7 @@ namespace CSharp_Shell
     	pwd, 
     	ls,
     	cd,
-
+      exit,
+      clear,
     }
 }
